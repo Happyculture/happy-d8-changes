@@ -1,7 +1,7 @@
 Et maintenant en Drupal 8 comment je fais ?
 ===========================================
 
-Voici une liste (non exhaustive) de fonctions utilisées couramment dans Drupal 7 et ce qui leur arrive dans Drupal 8
+Voici une liste (non exhaustive) de fonctions utilisées couramment dans Drupal 7 et ce qui leur arrive dans Drupal 8. Vous trouverez dans la plupart des éléments de cette liste le(s) "change record(s)" associé(s) (l'annonce du changement et ses conséquences).
 
 ### Ce qui ne change pas, ou peu
 
