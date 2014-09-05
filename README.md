@@ -21,7 +21,7 @@ Voici une liste de fonctions utilisées couramment dans Drupal 7 et ce qui leur 
 
 **watchdog**($type, $message, $variables, $severity, $link) existe encore mais fait appel au service de logging via : **\Drupal::service**('logger.factory')->**get**($type)->**log**($severity, $message, $variables);
 
-### Ce qui ont été remplacé
+### Ce qui a été remplacé
 
 **user_access**() est remplacé par la méthode **hasPermission**() de la class AccountInterface. https://www.drupal.org/node/2049309
 
