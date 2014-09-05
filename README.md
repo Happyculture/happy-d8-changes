@@ -21,6 +21,8 @@ Voici une liste (non exhaustive) de fonctions utilisées couramment dans Drupal 
 
 **watchdog**($type, $message, $variables, $severity, $link) existe encore mais fait appel au service de logging via : **\Drupal::service**('logger.factory')->**get**($type)->**log**($severity, $message, $variables);
 
+**drupal_static**() est inchangée
+
 ### Ce qui a été remplacé
 
 **user_access**() est remplacé par la méthode **hasPermission**() de la class AccountInterface. https://www.drupal.org/node/2049309
@@ -43,7 +45,7 @@ Voici une liste (non exhaustive) de fonctions utilisées couramment dans Drupal 
 
 **system_settings_form**() est remplacé par l'extension de la class ConfigFormBase https://www.drupal.org/node/1910694
 
-**variable_get**(), **variable_set**(), **variable_del**() sont remplacé par l'api de configuration https://www.drupal.org/node/2183531 et https://www.drupal.org/node/1809490
+**variable_get**(), **variable_set**(), **variable_del**() sont remplacés par l'api de configuration https://www.drupal.org/node/2183531 et https://www.drupal.org/node/1809490
 
 **drupal_access_denied**() est remplacé par throw new AccessDeniedHttpException(); venant du httpKernel Symfony https://www.drupal.org/node/1616360
 Dans le même esprit **drupal_not_found**() est remplacé par throw new NotFoundHttpException();
@@ -54,6 +56,8 @@ Dans le même esprit **drupal_not_found**() est remplacé par throw new NotFound
 **module_exists**() est remplacé par **\Drupal::moduleHandler**()->**moduleExists**($module). De plus la pluspart des fonctions systèmes lié aux modules sont remplacés par cette class moduleHandler https://www.drupal.org/node/1894902.
 
 **drupal_goto**() a été supprimé en faveur de la class RedirectResponse  https://www.drupal.org/node/2023537
+
+**cache_get**(), **cache_set**() sont remplacés par la Cache factory https://www.drupal.org/node/1272696
 
 **drush cache-clear all** (drush cc all) est remplacé par **drush cache-rebuild** (drush cr)
 
