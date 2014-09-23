@@ -7,9 +7,9 @@ Voici une liste (non exhaustive) de fonctions utilisées couramment dans Drupal 
 
 **t**() existe encore mais fait appel à **\Drupal::translation**()->**translate**($string, $args, $options);
 
-**url**() existe encore mais fait appel à **\Drupal::urlGenerator**();
+**url**() existe encore mais fait appel à **\Drupal::urlGenerator**() de plus il semblerait qu'elle soit amenée à disparaitre au profit de **\Drupal::url**() https://www.drupal.org/node/2339219
 
-**l**() existe encore
+**l**() existe encore mais il semblerai qu'elle soit en cours de suppression pour **\Drupal::l**() https://www.drupal.org/node/2339219
 
 **drupal_get_path**() est inchangée
 
