@@ -61,6 +61,8 @@ Dans le même esprit **drupal_not_found**() est remplacé par throw new NotFound
 
 **drush cache-clear all** (drush cc all) est remplacé par **drush cache-rebuild** (drush cr)
 
+**path_to_theme**() est remplacé par un objet ActiveTheme et la methode getPath **\Drupal::theme**()->**getActiveTheme**()->**getPath**(); https://www.drupal.org/node/2324935
+
 ### Ce qui n'existe plus
 
 $_GET['q'] n'existe plus il faut utiliser **current_path**() (mais c'était déjà une bonne pratique Drupal 7) https://www.drupal.org/node/1659562
