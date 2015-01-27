@@ -19,6 +19,8 @@ Voici une liste (non exhaustive) de fonctions utilisées couramment dans Drupal 
 
 **drupal_static**() est inchangée
 
+Dans le **hook_theme()**, lorsque l'on spécifie un template, l'emplacement du template a déjà pour préfixe "templates/".
+
 ### Ce qui a été remplacé
 
 **url**() est remplacé par des factory **Url::fromRoute**() et **Url::fromUri**() https://www.drupal.org/node/2346779
